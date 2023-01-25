@@ -1,0 +1,156 @@
+/*Pesquisa de site para lupa*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*geral */
+html{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Barra de Pesquisa de Matéria..*/
+table tr:nth-child(event) {
+    background-color: blue;
+}
+table th:hover {
+    background-color: rgb(5, 662, 176);
+}
+
+
+/* cabeçcalho até np logo*/
+
+/* faz parte de container*/
+.nav-logo {
+    max-width: 1440px;
+    grid-gap: 3rem;
+    display: flex;
+    gap: 3rem;
+    margin: auto;
+
+}
+/*colocaremos uma Lupa*/
+.lupa  {
+    position: absolute;
+    top: 60px;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background: rgb(158, 150, 150);
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+/*Na dentro da lupa/pesquisa*/
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #f0f5fb;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+    font-family: 'Open Sans';
+}
+/*Lupa/Pesquisa, configuração da imagem*/
+.search-bth {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.lupa:hover > .search-text {
+    width: 240px;
+    padding: 0 6px;
+}
+.lupa:hover > .search-bth {
+    background: #f0f5fb;
+}
+/*Estamos fazendo Section coluna esquerda */
+.vertical {
+    
+    background-color: #f9f9fb;
+    margin-left: px;
+    text-align: center;
+    padding: 14px;
+    width: 202px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+    cursor: pointer;
+  
+}
+/*Âncora coluna Direita*/
+.anchors {
+    border-radius: 15pt;
+    position: absolute;
+    top: 169px;
+    left: 1108px;
+    width: 20%;
+    padding-left: 15px;
+    text-align: center;
+    font-style: italic;
+    background-color: lightgray;
+    cursor: pointer;
+}
+.content {
+    
+    position: absolute;
+    top: 150px;
+    left: 256px;
+    width: 850px;
+    padding-left: center;
+    display: grid;
+    color: rgb(10, 10, 10);
+    font-style: italic;
+    
+}
+.ft>img {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    border-radius: 
+    21px;
+    
+    
+}
+
+/*Rodapé colocando os atributos..*/
+footer{
+    min-height: 100px;
+}
+.main-footer{
+    border-top: solid 1px #cdcdcd;
+    background-color: rgb(207, 203, 203);
+    position:absolute;
+    display: flex;
+    top: 3310px;
+    width: 99.9%;
+    
+
+}
+.main-footer .action> img {
+    float: right;
+    margin: 4px;
+    width: 70px;
+    height: 65px;
+   
+     
+}
+.main-footer >p {
+    background-color: rgb(46, 75, 62);
+    margin-left: 87ch;
+    color: #cdcdcd;
+    border-top: 10px;
+    text-align: center;
+}
